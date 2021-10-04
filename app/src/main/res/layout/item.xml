@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#CDB2EF"
+            android:paddingTop="10dp"
+            android:id="@+id/top_order"
+            >
+
+            <TextView
+                android:id="@+id/todo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/red"
+                ></TextView>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/todo_name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="30dp"
+                android:layout_below="@id/todo_name"
+                android:textStyle="italic"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                ></TextView>
+
+
+            <LinearLayout
+                android:id="@+id/second_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                >
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+
+                    ></ImageView>
+
+<!--                <Space-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="10dp"/>-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/setagain"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/ic_baseline_update_24"-->
+<!--                    ></ImageView>-->
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
